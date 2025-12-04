@@ -1,0 +1,68 @@
+:root {
+  /* GitLab Brand Colors */
+  --gitlab-orange: #FC6D26;
+  --gitlab-red: #E24329;
+  --gitlab-dark-red: #D22128;
+  --gitlab-blue: #3D9970;
+  --gitlab-dark-blue: #2E7D32;
+  
+  /* GitLab UI Colors */
+  --gitlab-bg-primary: #1f1f1f;
+  --gitlab-bg-secondary: #2d2d2d;
+  --gitlab-bg-tertiary: #3a3a3a;
+  --gitlab-border: #4a4a4a;
+  --gitlab-text-primary: #e8e8e8;
+  --gitlab-text-secondary: #b0b0b0;
+  --gitlab-text-muted: #808080;
+  
+  /* GitLab Card Colors */
+  --gitlab-card-bg: #2d2d2d;
+  --gitlab-card-border: #4a4a4a;
+  --gitlab-card-hover: #3a3a3a;
+  
+  /* GitLab Status Colors */
+  --gitlab-success: #3d9970;
+  --gitlab-info: #4285f4;
+  --gitlab-warning: #ff9800;
+  --gitlab-danger: #e24329;
+  
+  /* Branch Colors */
+  --branch-master: #3D9970;
+  --branch-gnu: #FC6D26;
+  --branch-linux: #E24329;
+  --branch-apache: #D22128;
+  --branch-mozilla: #FF7139;
+  --branch-languages: #3776AB;
+  --branch-tools: #F05032;
+  --branch-platforms: #181717;
+  --branch-frameworks: #61DAFB;
+  
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+

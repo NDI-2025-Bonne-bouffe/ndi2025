@@ -1,0 +1,250 @@
+{
+  "events": [
+    {
+      "id": "gnu-announcement",
+      "date": "1983-09-27",
+      "author": "Richard Stallman",
+      "title": "Annonce du projet GNU",
+      "description": "Richard Stallman annonce le projet GNU (GNU's Not Unix) avec l'objectif de créer un système d'exploitation libre et complet.",
+      "branch": "gnu",
+      "tags": ["GNU", "FSF", "Free Software"],
+      "type": "commit",
+      "color": "#FC6D26"
+    },
+    {
+      "id": "fsf-founded",
+      "date": "1985-10-04",
+      "author": "Richard Stallman",
+      "title": "Fondation de la Free Software Foundation",
+      "description": "Création de la FSF pour promouvoir le logiciel libre et défendre les droits des utilisateurs.",
+      "branch": "gnu",
+      "tags": ["FSF", "GPL", "Free Software"],
+      "type": "commit",
+      "color": "#FC6D26"
+    },
+    {
+      "id": "gpl-v1",
+      "date": "1989-02-25",
+      "author": "Richard Stallman",
+      "title": "Publication de la GPL v1",
+      "description": "Première version de la GNU General Public License, garantissant les libertés des utilisateurs.",
+      "branch": "gnu",
+      "tags": ["GPL", "License", "FSF"],
+      "type": "tag",
+      "color": "#FC6D26"
+    },
+    {
+      "id": "linux-announcement",
+      "date": "1991-08-25",
+      "author": "Linus Torvalds",
+      "title": "Annonce de Linux",
+      "description": "Linus Torvalds annonce le développement d'un système d'exploitation libre inspiré de Minix.",
+      "branch": "linux",
+      "tags": ["Linux", "Kernel", "Operating System"],
+      "type": "commit",
+      "color": "#E24329"
+    },
+    {
+      "id": "apache-founded",
+      "date": "1995-03-25",
+      "author": "Apache Group",
+      "title": "Fondation du projet Apache",
+      "description": "Création du serveur HTTP Apache, devenant le serveur web le plus populaire au monde.",
+      "branch": "apache",
+      "tags": ["Apache", "Web Server", "HTTP"],
+      "type": "commit",
+      "color": "#D22128"
+    },
+    {
+      "id": "opensource-term",
+      "date": "1998-02-03",
+      "author": "Christine Peterson",
+      "title": "Création du terme 'Open Source'",
+      "description": "Le terme 'Open Source' est proposé pour remplacer 'Free Software' et rendre le concept plus accessible aux entreprises.",
+      "branch": "master",
+      "tags": ["Open Source", "Terminology", "OSI"],
+      "type": "merge",
+      "color": "#3D9970"
+    },
+    {
+      "id": "osi-founded",
+      "date": "1998-02-08",
+      "author": "Open Source Initiative",
+      "title": "Fondation de l'Open Source Initiative",
+      "description": "Création de l'OSI pour promouvoir et protéger l'open source, avec la définition officielle de l'open source.",
+      "branch": "master",
+      "tags": ["OSI", "Open Source", "Definition"],
+      "type": "commit",
+      "color": "#3D9970"
+    },
+    {
+      "id": "mozilla-founded",
+      "date": "1998-01-23",
+      "author": "Netscape",
+      "title": "Libération du code source de Netscape",
+      "description": "Netscape libère le code source de son navigateur, donnant naissance au projet Mozilla.",
+      "branch": "mozilla",
+      "tags": ["Mozilla", "Browser", "Netscape"],
+      "type": "commit",
+      "color": "#FF7139"
+    },
+    {
+      "id": "python-1.0",
+      "date": "1994-01-26",
+      "author": "Guido van Rossum",
+      "title": "Python 1.0",
+      "description": "Première version stable de Python, langage de programmation open source.",
+      "branch": "languages",
+      "tags": ["Python", "Programming Language"],
+      "type": "release",
+      "color": "#3776AB"
+    },
+    {
+      "id": "git-created",
+      "date": "2005-04-07",
+      "author": "Linus Torvalds",
+      "title": "Création de Git",
+      "description": "Linus Torvalds crée Git pour gérer le développement du noyau Linux, révolutionnant le contrôle de version.",
+      "branch": "tools",
+      "tags": ["Git", "Version Control", "DVCS"],
+      "type": "commit",
+      "color": "#F05032"
+    },
+    {
+      "id": "github-founded",
+      "date": "2008-04-10",
+      "author": "Tom Preston-Werner, Chris Wanstrath, PJ Hyett",
+      "title": "Fondation de GitHub",
+      "description": "Lancement de GitHub, plateforme de développement collaboratif basée sur Git, transformant la façon dont les développeurs collaborent.",
+      "branch": "platforms",
+      "tags": ["GitHub", "Platform", "Collaboration"],
+      "type": "commit",
+      "color": "#181717"
+    },
+    {
+      "id": "gitlab-founded",
+      "date": "2011-10-08",
+      "author": "Dmitriy Zaporozhets, Valery Sizov",
+      "title": "Fondation de GitLab",
+      "description": "Création de GitLab, plateforme DevOps complète avec Git, CI/CD, et gestion de projet intégrée.",
+      "branch": "platforms",
+      "tags": ["GitLab", "DevOps", "CI/CD"],
+      "type": "commit",
+      "color": "#FC6D26"
+    },
+    {
+      "id": "docker-created",
+      "date": "2013-03-13",
+      "author": "Solomon Hykes",
+      "title": "Lancement de Docker",
+      "description": "Docker révolutionne le déploiement d'applications avec la conteneurisation, devenant un standard de l'industrie.",
+      "branch": "tools",
+      "tags": ["Docker", "Containers", "DevOps"],
+      "type": "commit",
+      "color": "#2496ED"
+    },
+    {
+      "id": "kubernetes-created",
+      "date": "2014-06-07",
+      "author": "Google",
+      "title": "Lancement de Kubernetes",
+      "description": "Google open-source Kubernetes, système d'orchestration de conteneurs qui devient le standard de facto.",
+      "branch": "tools",
+      "tags": ["Kubernetes", "Orchestration", "Containers"],
+      "type": "commit",
+      "color": "#326CE5"
+    },
+    {
+      "id": "react-open-sourced",
+      "date": "2013-05-29",
+      "author": "Facebook",
+      "title": "React open-sourcé",
+      "description": "Facebook open-source React, bibliothèque JavaScript pour construire des interfaces utilisateur, transformant le développement frontend.",
+      "branch": "frameworks",
+      "tags": ["React", "JavaScript", "Frontend"],
+      "type": "commit",
+      "color": "#61DAFB"
+    },
+    {
+      "id": "vscode-open-sourced",
+      "date": "2015-04-30",
+      "author": "Microsoft",
+      "title": "Visual Studio Code open-sourcé",
+      "description": "Microsoft open-source VS Code, éditeur de code devenant l'un des plus populaires au monde.",
+      "branch": "tools",
+      "tags": ["VS Code", "Editor", "IDE"],
+      "type": "commit",
+      "color": "#007ACC"
+    },
+    {
+      "id": "gpl-v3",
+      "date": "2007-06-29",
+      "author": "Free Software Foundation",
+      "title": "Publication de la GPL v3",
+      "description": "Troisième version de la GPL, adaptée aux enjeux modernes du logiciel libre et des brevets logiciels.",
+      "branch": "gnu",
+      "tags": ["GPL", "License", "FSF"],
+      "type": "tag",
+      "color": "#FC6D26"
+    },
+    {
+      "id": "nodejs-created",
+      "date": "2009-05-27",
+      "author": "Ryan Dahl",
+      "title": "Création de Node.js",
+      "description": "Lancement de Node.js, permettant d'exécuter JavaScript côté serveur et révolutionnant le développement web.",
+      "branch": "languages",
+      "tags": ["Node.js", "JavaScript", "Runtime"],
+      "type": "commit",
+      "color": "#339933"
+    }
+  ],
+  "branches": {
+    "master": {
+      "name": "Master",
+      "color": "#3D9970",
+      "description": "Branche principale de l'open source"
+    },
+    "gnu": {
+      "name": "GNU/FSF",
+      "color": "#FC6D26",
+      "description": "Mouvement du logiciel libre"
+    },
+    "linux": {
+      "name": "Linux",
+      "color": "#E24329",
+      "description": "Noyau Linux et écosystème"
+    },
+    "apache": {
+      "name": "Apache",
+      "color": "#D22128",
+      "description": "Projets Apache Foundation"
+    },
+    "mozilla": {
+      "name": "Mozilla",
+      "color": "#FF7139",
+      "description": "Projets Mozilla"
+    },
+    "languages": {
+      "name": "Languages",
+      "color": "#3776AB",
+      "description": "Langages de programmation open source"
+    },
+    "tools": {
+      "name": "Tools",
+      "color": "#F05032",
+      "description": "Outils de développement"
+    },
+    "platforms": {
+      "name": "Platforms",
+      "color": "#181717",
+      "description": "Plateformes de collaboration"
+    },
+    "frameworks": {
+      "name": "Frameworks",
+      "color": "#61DAFB",
+      "description": "Frameworks et bibliothèques"
+    }
+  }
+}
+

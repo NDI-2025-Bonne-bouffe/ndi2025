@@ -1,0 +1,376 @@
+@import './gitlab-theme.css';
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background-color: var(--gitlab-bg-primary);
+  min-height: 100vh;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl) 0;
+}
+
+.timeline-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gitlab-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-header p {
+  font-size: 1.1rem;
+  color: var(--gitlab-text-secondary);
+}
+
+/* Main Timeline Line */
+.timeline {
+  position: relative;
+  padding: var(--spacing-xl) 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--gitlab-orange),
+    var(--gitlab-blue),
+    var(--gitlab-red)
+  );
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Timeline Events Container */
+.timeline-events {
+  position: relative;
+  z-index: 2;
+}
+
+/* Timeline Event Item */
+.timeline-event-item {
+  position: relative;
+  margin-bottom: var(--spacing-2xl);
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-event-item:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+.timeline-event-item:nth-child(even) {
+  justify-content: flex-start;
+}
+
+/* Event Card */
+.timeline-event-card {
+  position: relative;
+  width: 45%;
+  max-width: 500px;
+  background: var(--gitlab-card-bg);
+  border: 1px solid var(--gitlab-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.timeline-event-card:hover {
+  background: var(--gitlab-card-hover);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.timeline-event-item:nth-child(odd) .timeline-event-card {
+  margin-right: var(--spacing-md);
+}
+
+.timeline-event-item:nth-child(even) .timeline-event-card {
+  margin-left: var(--spacing-md);
+}
+
+/* Event Type Indicator */
+.event-type-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--gitlab-bg-primary);
+  z-index: 3;
+  transition: all var(--transition-base);
+  box-shadow: 0 0 0 2px var(--gitlab-bg-primary);
+}
+
+/* Ligne de connexion entre la card et l'indicateur */
+.timeline-event-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: var(--gitlab-border);
+  z-index: 2;
+  opacity: 0.4;
+}
+
+/* Pour les événements à droite (odd) - ligne de la card vers le centre */
+.timeline-event-item:nth-child(odd)::before {
+  right: calc(50% + 10px);
+  left: calc(45% + var(--spacing-md));
+}
+
+/* Pour les événements à gauche (even) - ligne du centre vers la card */
+.timeline-event-item:nth-child(even)::before {
+  left: calc(50% + 10px);
+  right: calc(45% + var(--spacing-md));
+}
+
+.event-type-indicator.commit {
+  background-color: var(--gitlab-info);
+}
+
+.event-type-indicator.merge {
+  background-color: var(--gitlab-success);
+}
+
+.event-type-indicator.tag {
+  background-color: var(--gitlab-warning);
+}
+
+.event-type-indicator.release {
+  background-color: var(--gitlab-orange);
+}
+
+/* Event Header */
+.event-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.event-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gitlab-text-primary);
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  color: var(--gitlab-text-muted);
+  font-family: var(--font-family-mono);
+  white-space: nowrap;
+}
+
+/* Event Author */
+.event-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+  color: var(--gitlab-text-secondary);
+}
+
+.event-author-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gitlab-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Event Description */
+.event-description {
+  color: var(--gitlab-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+/* Event Tags */
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.event-tag {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--gitlab-bg-tertiary);
+  border: 1px solid var(--gitlab-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: var(--gitlab-text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.event-tag:hover {
+  background: var(--gitlab-card-hover);
+  border-color: var(--gitlab-orange);
+  color: var(--gitlab-text-primary);
+}
+
+/* Event Branch Badge */
+.event-branch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--gitlab-bg-tertiary);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: var(--spacing-sm);
+}
+
+.event-branch::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Branch SVG Lines */
+.timeline-branches {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.timeline-branch-line {
+  stroke-width: 2;
+  fill: none;
+  opacity: 0.6;
+  transition: opacity var(--transition-base);
+}
+
+.timeline-branch-line:hover {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: var(--spacing-md);
+  }
+
+  .timeline-header h1 {
+    font-size: 2rem;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-event-item {
+    justify-content: flex-start !important;
+    padding-left: 60px;
+  }
+
+  .timeline-event-card {
+    width: calc(100% - 60px);
+    max-width: none;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .event-type-indicator {
+    left: 30px !important;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Masquer les lignes de connexion sur mobile */
+  .timeline-event-item::before {
+    display: none;
+  }
+
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-title {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-header p {
+    font-size: 0.95rem;
+  }
+
+  .timeline-event-card {
+    padding: var(--spacing-md);
+  }
+
+  .event-title {
+    font-size: 1.1rem;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation States */
+.timeline-event-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading State */
+.timeline-loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--gitlab-text-secondary);
+}
+
+/* Empty State */
+.timeline-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--gitlab-text-muted);
+}
+
