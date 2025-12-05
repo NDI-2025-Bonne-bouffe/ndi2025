@@ -10,7 +10,7 @@
 
 Une visualisation interactive de l'histoire de l'Open Source avec un thème inspiré de GitLab pour la Nuit de l'Info 2025.
 
-## 🚀 Démarrage rapide
+## Démarrage rapide
 
 1. **Installation des dépendances**
    ```bash
@@ -22,6 +22,6 @@ Une visualisation interactive de l'histoire de l'Open Source avec un thème insp
    npm run dev
    ```
 
-## 🛠 Stack Technique
+## Stack Technique
 
 Voir [docs/stack.md](docs/stack.md) pour les détails techniques.
