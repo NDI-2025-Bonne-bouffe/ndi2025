@@ -10,6 +10,7 @@ export default defineConfig({
         alternatives: resolve(__dirname, 'alternatives.html'),
         ecology: resolve(__dirname, 'ecology.html'),
         opensource: resolve(__dirname, 'opensource.html'),
+        terminal: resolve(__dirname, 'terminal.html'),
       },
     },
   },

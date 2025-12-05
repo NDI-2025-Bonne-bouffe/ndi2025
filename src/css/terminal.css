@@ -1,0 +1,127 @@
+:root {
+  --term-bg: #0d1117;
+  --term-text: #c9d1d9;
+  --term-green: #2ea043;
+  --term-blue: #58a6ff;
+  --term-red: #ff7b72;
+  --term-yellow: #d29922;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: var(--term-bg);
+  color: var(--term-text);
+  padding: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.terminal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--term-bg);
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #30363d;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-dot.red { 
+  background: #ff5f56; 
+  cursor: pointer;
+}
+.terminal-dot.red:hover {
+  background: #ff3b30;
+}
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-title {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.terminal-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.output-line {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.terminal-line {
+  margin-bottom: 5px;
+}
+
+.terminal-prompt {
+  color: var(--term-green);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.terminal-command {
+  color: var(--term-text);
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+#terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--term-text);
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  flex: 1;
+  outline: none;
+  margin-left: 10px;
+}
+
+.file {
+  color: var(--term-blue);
+  margin-right: 15px;
+}
+
+.file.secret {
+  color: var(--term-red);
+}
+
+/* Snake Game Canvas */
+#snake-canvas {
+  border: 2px solid var(--term-green);
+  background: #000;
+  margin-top: 20px;
+  display: block;
+}
