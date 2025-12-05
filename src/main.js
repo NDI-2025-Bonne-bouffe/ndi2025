@@ -1,24 +1,10 @@
 import { Timeline } from './components/Timeline.js';
 import { TimelineAnimations, initScrollTrigger } from './utils/timeline-animations.js';
 import { initNavigation } from './components/Navigation.js';
-import { KonamiCode } from './utils/konami-code.js';
 import './css/globals.css';
 
 // Initialiser ScrollTrigger si disponible
 initScrollTrigger();
-
-// Initialiser le Konami code
-console.log('🚀 Initialisation du Konami code...');
-try {
-  const konamiCode = new KonamiCode();
-  konamiCode.init(() => {
-    console.log('🎉 Konami code activé ! Redirection vers terminal.html');
-    window.location.href = '/terminal.html';
-  });
-  console.log('✅ Konami code créé avec succès');
-} catch (error) {
-  console.error('❌ Erreur lors de l\'initialisation du Konami code:', error);
-}
 
 // Initialiser la timeline
 async function init() {

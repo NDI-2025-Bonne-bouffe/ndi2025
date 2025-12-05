@@ -22,7 +22,7 @@ export function initNavigation() {
   const footer = document.createElement('footer');
   footer.className = 'main-footer';
   footer.innerHTML = `
-    <p>&copy; 2025 Nuit de l'Info - Équipe Bonne Bouffe</p>
+    <p><a href="terminal.html" class="copyright-link-footer">©</a> 2025 Nuit de l'Info - Équipe Bonne Bouffe</p>
   `;
 
   // Insert Header at the beginning

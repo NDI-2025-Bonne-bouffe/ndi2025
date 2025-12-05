@@ -19,10 +19,22 @@ export class Timeline {
    */
   async loadData() {
     try {
-      const response = await fetch('/src/data/timeline-events.json');
-      const data = await response.json();
-      this.events = data.events;
-      this.branches = data.branches;
+      // Essayer d'abord l'import direct (Vite)
+      let data;
+      try {
+        const imported = await import('../data/timeline-events.json');
+        data = imported.default || imported;
+      } catch (importError) {
+        // Si l'import échoue, utiliser fetch depuis public/
+        const response = await fetch('/data/timeline-events.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        data = await response.json();
+      }
+      
+      this.events = data.events || [];
+      this.branches = data.branches || {};
       
       // Trier les événements par date
       this.events.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -42,6 +54,17 @@ export class Timeline {
       <div class="timeline-header">
         <h1>Histoire de l'Open Source</h1>
         <p>Une timeline interactive inspirée de GitLab</p>
+      </div>
+    `;
+  }
+
+  /**
+   * Crée le footer avec le lien copyright
+   */
+  createFooter() {
+    return `
+      <div class="timeline-footer">
+        <a href="terminal.html" class="copyright-link">©</a>
       </div>
     `;
   }
@@ -132,6 +155,7 @@ export class Timeline {
       this.container.innerHTML = `
         ${this.createHeader()}
         ${this.createTimelineStructure()}
+        ${this.createFooter()}
       `;
 
       // Rendre les événements
