@@ -25,3 +25,19 @@ Une visualisation interactive de l'histoire de l'Open Source avec un thème insp
 ## Stack Technique
 
 Voir [docs/stack.md](docs/stack.md) pour les détails techniques.
+
+## Structure du Projet
+- `src/` : Contient le code source de l'application.
+- `public/` : Contient les fichiers statiques.
+- `docs/` : Documentation supplémentaire.
+- `vite.config.js` : Configuration de Vite pour le projet.
+- `package.json` : Gestion des dépendances et scripts npm.
+- `README.md` : Ce fichier de documentation.
+- `.gitignore` : Fichiers et dossiers à ignorer par Git.
+- `LICENSE` : Licence du projet (MIT).
+- `.github/` : Workflows GitHub Actions pour CI/CD.
+- 
+## Contribution
+ - Sulivan CERDAN (80% des push sous le nom de Yann Renard)
+ - Yann RENARD (20% des push sous le nom de Yann Renard)
+ - Valentin Licour-Michaux
