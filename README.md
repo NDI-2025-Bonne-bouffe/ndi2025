@@ -8,8 +8,6 @@
 </p>
 
 
-# Histoire de l'Open Source - Timeline GitLab
-
 Une visualisation interactive de l'histoire de l'Open Source avec un thème inspiré de GitLab pour la Nuit de l'Info 2025.
 
 ## 🚀 Démarrage rapide
