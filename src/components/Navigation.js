@@ -12,6 +12,7 @@ export function initNavigation() {
       <ul class="nav-links">
         <li><a href="/index.html">Timeline</a></li>
         <li><a href="/alternatives.html">Alternatives</a></li>
+        <li><a href="/ecology.html">Écologie</a></li>
       </ul>
     </nav>
   `;

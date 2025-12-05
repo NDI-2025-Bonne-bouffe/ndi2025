@@ -1,0 +1,86 @@
+[
+  {
+    "id": "hardware",
+    "title": "Matériel Durable",
+    "icon": "💻",
+    "color": "#e67e22",
+    "description": "L'impact carbone de la fabrication d'un ordinateur représente 70 à 80% de son empreinte totale. Prolonger sa durée de vie est le geste écologique numéro 1.",
+    "actions": [
+      {
+        "title": "Réparer plutôt que jeter",
+        "text": "Encourager les ateliers de réparation au sein de l'établissement (Repair Café)."
+      },
+      {
+        "title": "Achat reconditionné",
+        "text": "Privilégier le matériel reconditionné pour les nouveaux équipements de l'école."
+      },
+      {
+        "title": "Maintenance préventive",
+        "text": "Dépoussiérer les tours et changer la pâte thermique pour éviter la surchauffe."
+      }
+    ]
+  },
+  {
+    "id": "software",
+    "title": "Logiciels & Obsolescence",
+    "icon": "🐧",
+    "color": "#3498db",
+    "description": "L'obsolescence logicielle force souvent à changer de matériel. Les logiciels libres permettent de lutter contre ce fléau.",
+    "actions": [
+      {
+        "title": "Passer à Linux",
+        "text": "Installer des distributions légères (Xubuntu, Mint) sur les vieux PC pour les rendre rapides à nouveau."
+      },
+      {
+        "title": "Logiciels frugaux",
+        "text": "Utiliser des logiciels optimisés qui consomment peu de RAM et de CPU."
+      },
+      {
+        "title": "Éviter le Cloud systématique",
+        "text": "Travailler en local quand c'est possible pour réduire le trafic réseau énergivore."
+      }
+    ]
+  },
+  {
+    "id": "habits",
+    "title": "Sobriété au Quotidien",
+    "icon": "🌱",
+    "color": "#2ecc71",
+    "description": "Des petits gestes multipliés par des centaines d'élèves ont un impact majeur.",
+    "actions": [
+      {
+        "title": "Éteindre vraiment",
+        "text": "Éteindre complètement les salles informatiques le soir, pas juste les écrans."
+      },
+      {
+        "title": "Nettoyage de données",
+        "text": "Organiser des 'Cyber CleanUp Days' pour vider les serveurs et boîtes mails."
+      },
+      {
+        "title": "Recherche efficace",
+        "text": "Utiliser des favoris plutôt que de refaire la même recherche Google 10 fois."
+      }
+    ]
+  },
+  {
+    "id": "waste",
+    "title": "Gestion des Déchets (DEEE)",
+    "icon": "♻️",
+    "color": "#9b59b6",
+    "description": "Les déchets électroniques sont toxiques et contiennent des métaux précieux à récupérer.",
+    "actions": [
+      {
+        "title": "Collecte dédiée",
+        "text": "Installer des bacs de collecte pour piles, câbles et petits appareils dans le hall."
+      },
+      {
+        "title": "Don aux associations",
+        "text": "Donner le vieux matériel fonctionnel à des associations (Emmaüs Connect, etc.)."
+      },
+      {
+        "title": "Sensibilisation",
+        "text": "Créer des affiches sur le cycle de vie d'un smartphone."
+      }
+    ]
+  }
+]

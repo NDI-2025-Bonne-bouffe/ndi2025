@@ -6,7 +6,7 @@
   padding: 1.5rem 3rem;
   background: rgba(26, 26, 26, 0.5);
   backdrop-filter: blur(10px);
-  z-index: 50;
+  z-index: 95;
   display: flex;
   justify-content: space-between;
   align-items: center;

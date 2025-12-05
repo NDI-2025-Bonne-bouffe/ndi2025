@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import './css/globals.css';
 import './css/alternatives.css';
 import alternativesData from './data/alternatives.json';
 import { initNavigation } from './components/Navigation.js';
@@ -181,13 +182,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const tl = gsap.timeline();
         
         // 1. Faire disparaître les noeuds, header et footer
-        tl.to([...nodes, header, footer], {
+        tl.to(nodes, {
             scale: 0,
             opacity: 0,
             duration: 0.5,
             stagger: 0.1,
             ease: "back.in(1.7)"
         });
+        tl.to(header, { y: -100, opacity: 0, duration: 0.5 }, "<");
+        tl.to(footer, { y: 100, opacity: 0, duration: 0.5 }, "<");
 
         // 2. Afficher l'overlay
         tl.to(detailsOverlay, {
@@ -227,12 +230,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // 2. Réapparaître les noeuds, header et footer
-        tl.to([...nodes, header, footer], {
+        tl.to(nodes, {
             scale: 1,
             opacity: 1,
             duration: 0.5,
             stagger: 0.1,
             ease: "back.out(1.7)"
         });
+        tl.to([header, footer], { y: 0, opacity: 1, duration: 0.5 }, "<");
     });
 });
