@@ -1,5 +1,6 @@
 import { Timeline } from './components/Timeline.js';
 import { TimelineAnimations, initScrollTrigger } from './utils/timeline-animations.js';
+import { initNavigation } from './components/Navigation.js';
 import './css/globals.css';
 
 // Initialiser ScrollTrigger si disponible
@@ -8,6 +9,9 @@ initScrollTrigger();
 // Initialiser la timeline
 async function init() {
   const app = document.getElementById('app');
+  
+  // Initialiser la navigation
+  initNavigation();
   
   // Créer le conteneur de la timeline
   const timelineContainer = document.createElement('div');

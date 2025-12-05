@@ -1,0 +1,170 @@
+[
+  {
+    "id": "hardware",
+    "label": "Hardware Propriétaire",
+    "color": "#e74c3c",
+    "alternatives": [
+      {
+        "name": "Arduino",
+        "description": "Plateforme de prototypage électronique open-source basée sur du matériel et logiciel flexibles.",
+        "difficulty": "Facile",
+        "pros": ["Grande communauté", "Facile à apprendre", "Peu coûteux"],
+        "cons": ["Puissance limitée pour les gros projets"]
+      },
+      {
+        "name": "Framework Laptop",
+        "description": "Ordinateur portable modulaire, réparable et évolutif.",
+        "difficulty": "Facile",
+        "pros": ["Réparabilité maximale", "Modulaire", "Documentation complète"],
+        "cons": ["Prix plus élevé à l'achat"]
+      },
+      {
+        "name": "Raspberry Pi",
+        "description": "Nano-ordinateur monocarte à processeur ARM.",
+        "difficulty": "Moyen",
+        "pros": ["Polyvalent (serveur, rétro-gaming)", "Supporte Linux"],
+        "cons": ["Nécessite des accessoires (alim, SD)"]
+      },
+      {
+        "name": "Pine64",
+        "description": "Constructeur de matériel ARM (téléphones, ordinateurs, montres) supportant Linux.",
+        "difficulty": "Moyen",
+        "pros": ["Prix abordable", "Communauté active", "Support Linux natif"],
+        "cons": ["Finitions parfois brutes", "Disponibilité variable"]
+      },
+      {
+        "name": "RISC-V",
+        "description": "Architecture de jeu d'instructions (ISA) standard ouverte.",
+        "difficulty": "Difficile",
+        "pros": ["Liberté totale de conception", "Pas de royalties"],
+        "cons": ["Écosystème encore jeune"]
+      }
+    ]
+  },
+  {
+    "id": "os",
+    "label": "OS Propriétaire",
+    "color": "#3498db",
+    "alternatives": [
+      {
+        "name": "Linux (Ubuntu/Mint)",
+        "description": "Systèmes d'exploitation libres, stables et sécurisés (Alternative à Windows/macOS).",
+        "difficulty": "Moyen",
+        "pros": ["Gratuit", "Sécurisé", "Respect de la vie privée"],
+        "cons": ["Compatibilité de certains logiciels pro", "Jeux (bien que ça s'améliore)"]
+      },
+      {
+        "name": "Debian",
+        "description": "Le système d'exploitation universel, base de nombreuses distributions.",
+        "difficulty": "Moyen",
+        "pros": ["Stabilité légendaire", "Immense dépôt de paquets", "100% Libre"],
+        "cons": ["Logiciels parfois anciens (version stable)"]
+      },
+      {
+        "name": "Arch Linux",
+        "description": "Distribution légère et flexible en Rolling Release.",
+        "difficulty": "Difficile",
+        "pros": ["Toujours à jour", "Documentation (Wiki) excellente", "Contrôle total"],
+        "cons": ["Installation manuelle", "Maintenance requise"]
+      },
+      {
+        "name": "FreeBSD",
+        "description": "Système d'exploitation avancé dérivé de BSD.",
+        "difficulty": "Difficile",
+        "pros": ["Très stable", "Performant pour les réseaux"],
+        "cons": ["Support matériel moindre que Linux"]
+      },
+      {
+        "name": "LineageOS",
+        "description": "Système d'exploitation mobile basé sur Android (Alternative à Android Google/iOS).",
+        "difficulty": "Difficile",
+        "pros": ["Vie privée respectée", "Prolonge la vie des vieux téléphones", "Pas de bloatware"],
+        "cons": ["Installation complexe (flash)", "Certaines apps bancaires bloquent"]
+      }
+    ]
+  },
+  {
+    "id": "software",
+    "label": "Logiciels Propriétaires",
+    "color": "#2ecc71",
+    "alternatives": [
+      {
+        "name": "LibreOffice",
+        "description": "Suite bureautique complète (alternative à MS Office).",
+        "difficulty": "Facile",
+        "pros": ["Gratuit", "Compatible formats docx/xlsx"],
+        "cons": ["Interface classique"]
+      },
+      {
+        "name": "Firefox",
+        "description": "Navigateur web respectueux de la vie privée (alternative à Chrome/Edge).",
+        "difficulty": "Facile",
+        "pros": ["Indépendant", "Extensions puissantes", "Protection vie privée"],
+        "cons": ["Parfois un peu plus lent sur certains sites optimisés Chrome"]
+      },
+      {
+        "name": "Thunderbird",
+        "description": "Client de messagerie électronique (alternative à Outlook).",
+        "difficulty": "Facile",
+        "pros": ["Gère plusieurs comptes", "Calendrier intégré", "Chiffrement PGP"],
+        "cons": ["Interface un peu datée"]
+      },
+      {
+        "name": "VLC",
+        "description": "Lecteur multimédia.",
+        "difficulty": "Facile",
+        "pros": ["Lit tout", "Léger"],
+        "cons": ["Interface basique"]
+      },
+      {
+        "name": "GIMP",
+        "description": "Éditeur d'image (alternative à Photoshop).",
+        "difficulty": "Moyen",
+        "pros": ["Puissant", "Scriptable"],
+        "cons": ["Ergonomie différente de Photoshop"]
+      },
+      {
+        "name": "Krita",
+        "description": "Logiciel de peinture numérique (alternative à Corel Painter/Photoshop).",
+        "difficulty": "Moyen",
+        "pros": ["Excellent pour le dessin", "Interface intuitive", "Support tablettes"],
+        "cons": ["Moins orienté retouche photo que GIMP"]
+      },
+      {
+        "name": "Inkscape",
+        "description": "Éditeur de graphismes vectoriels (alternative à Illustrator).",
+        "difficulty": "Moyen",
+        "pros": ["Format SVG natif", "Puissant", "Gratuit"],
+        "cons": ["Performances sur gros fichiers"]
+      },
+      {
+        "name": "Godot Engine",
+        "description": "Moteur de jeu complet 2D et 3D (alternative à Unity/Unreal).",
+        "difficulty": "Moyen",
+        "pros": ["Léger", "Langage GDScript facile", "Pas de royalties"],
+        "cons": ["3D moins avancée qu'Unreal (mais rattrape vite)"]
+      },
+      {
+        "name": "OBS Studio",
+        "description": "Logiciel d'enregistrement vidéo et de streaming.",
+        "difficulty": "Moyen",
+        "pros": ["Standard de l'industrie", "Très complet", "Plugins"],
+        "cons": ["Configuration initiale peut être complexe"]
+      },
+      {
+        "name": "Shotcut",
+        "description": "Éditeur vidéo non-linéaire (alternative à Premiere Pro).",
+        "difficulty": "Moyen",
+        "pros": ["Supporte nombreux formats", "Pas d'import nécessaire"],
+        "cons": ["Interface parfois peu intuitive"]
+      },
+      {
+        "name": "Blender",
+        "description": "Suite de création 3D (alternative à Maya/3ds Max).",
+        "difficulty": "Difficile",
+        "pros": ["Professionnel", "Tout-en-un (modélisation, animation, rendu)"],
+        "cons": ["Courbe d'apprentissage raide"]
+      }
+    ]
+  }
+]

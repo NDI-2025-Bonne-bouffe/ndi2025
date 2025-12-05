@@ -1,0 +1,87 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  background: rgba(26, 26, 26, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-header .logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: -0.5px;
+  background: linear-gradient(45deg, #fff, #a5a5a5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .nav-links a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.main-header .nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.main-header .nav-links a:hover {
+  color: #fff;
+}
+
+.main-header .nav-links a:hover::after {
+  width: 100%;
+}
+
+.main-header .nav-links a.active {
+  color: #fff;
+}
+
+.main-header .nav-links a.active::after {
+  width: 100%;
+}
+
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background: rgba(26, 26, 26, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
