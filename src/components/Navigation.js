@@ -7,7 +7,7 @@ export function initNavigation() {
   const header = document.createElement('header');
   header.className = 'main-header';
   header.innerHTML = `
-    <div class="logo">NDI 2025</div>
+    <a href="/opensource.html" class="logo">NDI 2025</a>
     <nav>
       <ul class="nav-links">
         <li><a href="/index.html">Timeline</a></li>

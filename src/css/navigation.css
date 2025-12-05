@@ -23,6 +23,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none; /* Enlever le soulignement du lien */
+  cursor: pointer;
 }
 
 .main-header .nav-links {

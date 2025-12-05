@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Comprendre l'Open Source",
+    "subtitle": "Une philosophie de partage, de transparence et de collaboration qui façonne le monde numérique d'aujourd'hui."
+  },
+  "sections": [
+    {
+      "id": "definition",
+      "title": "Qu'est-ce que l'Open Source ?",
+      "content": "L'Open Source (ou code source ouvert) désigne un logiciel dont le code source est rendu public. Cela signifie que n'importe qui peut le consulter, le modifier et le redistribuer. Contrairement aux logiciels propriétaires (comme Windows ou Photoshop) où le code est un secret industriel, l'Open Source favorise la transparence et la collaboration communautaire. C'est la recette de cuisine que tout le monde peut améliorer.",
+      "icon": "🔓"
+    },
+    {
+      "id": "utility",
+      "title": "À quoi ça sert ?",
+      "content": "L'Open Source est partout : Internet, les supercalculateurs, et même votre téléphone Android tournent grâce à lui. Il permet :\n\n• La Transparence : On sait exactement ce que fait le logiciel avec nos données.\n• La Sécurité : Avec des milliers d'yeux sur le code, les failles sont détectées et corrigées très vite.\n• L'Innovation : On ne réinvente pas la roue, on construit sur les bases existantes.\n• L'Indépendance : On ne dépend pas du bon vouloir d'une seule entreprise géante.",
+      "icon": "🌍"
+    },
+    {
+      "id": "usage",
+      "title": "Comment l'utiliser ?",
+      "content": "Tout le monde peut passer à l'Open Source :\n\n1. Adoptez des alternatives : Utilisez Firefox, VLC, LibreOffice ou Linux au quotidien.\n2. Respectez les licences : Les licences (GPL, MIT, Apache) définissent vos droits et devoirs.\n3. Contribuez : Pas besoin d'être codeur ! Signaler un bug, traduire une interface, écrire de la documentation ou faire un don sont des contributions précieuses.",
+      "icon": "🤝"
+    }
+  ]
+}
