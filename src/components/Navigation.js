@@ -7,12 +7,13 @@ export function initNavigation() {
   const header = document.createElement('header');
   header.className = 'main-header';
   header.innerHTML = `
-    <a href="/opensource.html" class="logo">NDI 2025</a>
+    <a href="opensource.html" class="logo">NDI 2025</a>
     <nav>
       <ul class="nav-links">
-        <li><a href="/index.html">Timeline</a></li>
-        <li><a href="/alternatives.html">Alternatives</a></li>
-        <li><a href="/ecology.html">Écologie</a></li>
+        <li><a href="index.html">Timeline</a></li>
+        <li><a href="alternatives.html">Alternatives</a></li>
+        <li><a href="ecology.html">Écologie</a></li>
+        <li><a href="opensource.html">Open Source</a></li>
       </ul>
     </nav>
   `;
@@ -34,7 +35,9 @@ export function initNavigation() {
   const currentPath = window.location.pathname;
   const links = header.querySelectorAll('.nav-links a');
   links.forEach(link => {
-    if (link.getAttribute('href') === currentPath || (currentPath === '/' && link.getAttribute('href') === '/index.html')) {
+    const href = link.getAttribute('href');
+    // Check if current path ends with the href (handling /ndi2025/ prefix)
+    if (currentPath.endsWith(href) || (currentPath.endsWith('/') && href === 'index.html')) {
       link.classList.add('active');
     }
   });
