@@ -8,19 +8,17 @@ import './css/globals.css';
 initScrollTrigger();
 
 // Initialiser le Konami code
-const konamiCode = new KonamiCode();
-konamiCode.init(() => {
-  console.log('🎉 Konami code activé ! Redirection vers terminal.html');
-  // Essayer plusieurs chemins possibles
-  const paths = [
-    '/terminal.html',
-    './terminal.html',
-    window.location.origin + '/terminal.html'
-  ];
-  
-  // Utiliser le premier chemin qui fonctionne
-  window.location.href = paths[0];
-});
+console.log('🚀 Initialisation du Konami code...');
+try {
+  const konamiCode = new KonamiCode();
+  konamiCode.init(() => {
+    console.log('🎉 Konami code activé ! Redirection vers terminal.html');
+    window.location.href = '/terminal.html';
+  });
+  console.log('✅ Konami code créé avec succès');
+} catch (error) {
+  console.error('❌ Erreur lors de l\'initialisation du Konami code:', error);
+}
 
 // Initialiser la timeline
 async function init() {

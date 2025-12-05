@@ -39,8 +39,11 @@ export class KonamiCode {
    */
   attachListener() {
     // Utiliser capture pour intercepter les événements même si d'autres handlers existent
-    document.addEventListener('keydown', this.handleKeyPress.bind(this), true);
-    console.log('Konami code initialisé. Séquence: ↑ ↑ ← → ← → B A');
+    const boundHandler = this.handleKeyPress.bind(this);
+    document.addEventListener('keydown', boundHandler, true);
+    this.boundHandler = boundHandler; // Garder une référence pour pouvoir le retirer
+    console.log('✅ Konami code initialisé. Séquence: ↑ ↑ ← → ← → B A');
+    console.log('Test: Appuyez sur n\'importe quelle touche pour vérifier que l\'écouteur fonctionne');
   }
 
   /**
@@ -52,10 +55,8 @@ export class KonamiCode {
       return;
     }
 
-    // Empêcher le comportement par défaut pour les touches de navigation
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.code)) {
-      // Ne pas empêcher complètement, juste pour éviter le scroll
-    }
+    // Debug: afficher chaque touche pressée
+    console.log('🔑 Touche pressée:', event.code, '| Séquence actuelle:', this.sequence);
 
     // Ajouter la touche à la séquence
     this.sequence.push(event.code);
@@ -65,18 +66,21 @@ export class KonamiCode {
       this.sequence.shift();
     }
 
-    // Debug: afficher la séquence actuelle (optionnel, à retirer en production)
-    // console.log('Séquence actuelle:', this.sequence);
-
     // Vérifier si la séquence correspond
     if (this.sequence.length === this.targetSequence.length) {
       const matches = this.sequence.every((key, index) => 
         key === this.targetSequence[index]
       );
 
+      console.log('🔍 Vérification séquence:', {
+        actuelle: this.sequence,
+        cible: this.targetSequence,
+        correspond: matches
+      });
+
       if (matches) {
         // Séquence complète détectée !
-        console.log('🎉 Konami code détecté ! Redirection...');
+        console.log('🎉🎉🎉 Konami code détecté ! Redirection...');
         event.preventDefault();
         event.stopPropagation();
         this.sequence = []; // Réinitialiser
@@ -91,7 +95,9 @@ export class KonamiCode {
    * Nettoie les écouteurs d'événements
    */
   destroy() {
-    document.removeEventListener('keydown', this.handleKeyPress.bind(this), true);
+    if (this.boundHandler) {
+      document.removeEventListener('keydown', this.boundHandler, true);
+    }
   }
 }
 
